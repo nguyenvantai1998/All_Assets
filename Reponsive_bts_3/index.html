@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reponsive Boostrap 3.3.1</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.min.css">
+	<style>
+		.thumb:nth-child(even){background:#e84118;}
+		.container-fluid{background: #2C3A47;}
+		.container{background: #dfe4ea;}
+		.content{background: #9AECDB;}
+	</style>
+</head>
+<body>
+
+<!-- Content 1 -->
+	<h1>Row--Col</h1>
+	<h3>Xét theo thứ tự của thiết bị: .col-lg:(≥1200px) .col-md:(≥992px), .col-sm:(≥768px), .col-xs:(< 768px) mobile
+		---->xét ngược lại
+	 </h3>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12 content">
+					<h3>Content</h3>
+					<p><strong>Large screens:</strong>8 colums wide</p>
+					<p><strong>Midium screens:</strong>6 colums wide</p>
+					<p><strong>Small screens:</strong>12 colums wide</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 sidebar">
+					<h3>Sidebar</h3>
+					<p><strong>Large screens:</strong>4 colums wide</p>
+					<p><strong>Midium screens:</strong>6 colums wide</p>
+					<p><strong>Small screens:</strong>12 colums wide</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container"style="margin-top: 20px;">
+			<div class="row">
+				<div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 thumb">thumbnail</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="margin-top: 20px;">
+		<div class="container">
+			<h2>Không không thiếu col</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12" style="background-color: #f9ca24;">col-md-4 col-sm-6 col-xs-12</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-6"  style="background-color: #6ab04c;">col-md-4 col-sm-6 col-xs-6</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-6" style="background-color: #be2edd;">col-md-4 col-sm-12 col-xs-6</div>
+			</div>
+
+			<h2>Thiếu col</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-6" style="background-color: #f9ca24;">col-md-4 col-sm-6 col-xs-6 </div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12" style="background-color: #6ab04c;">col-md-4 col-sm-6 col-xs-12</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-6" style="background-color: #be2edd;">col-md-4 col-sm-6 col-xs-6</div>
+			</div>
+		</div>
+	</div>
+
+	<h1>Columns</h1>
+	<div class="container-fluid" style="margin-top: 20px;color:white;">
+		<h2>Sắp xếp theo thiết bị nhỏ đến thiết bị lớn</h2>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 1</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 2</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 3</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 4</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 5</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 6</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 7</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 8</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 9</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 10</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 11</div>
+			<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1 thumb">thumbnail 12</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="margin-top: 20px;color:white;">
+		<h2>Sắp xếp theo thiết bị nhỏ lớn đến thiết bị nhỏ</h2>
+		<div class="row">
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 1</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 2</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 3</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 4</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 5</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 6</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 7</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 8</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 9</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 10</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 11</div>
+			<div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 thumb">thumbnail 12</div>
+		</div>
+	</div>
+
+	<h1>Columns offset</h1>
+	<div class="container-fluid" style="margin-top: 20px;color:white;">
+		<div class="row">
+			<div class="col-md-offset-0 col-md-4 col-xs-offset-2 col-xs-10 thumb" style="background-color: green;">thumbnail</div>
+			<div class="col-md-4 col-xs-12 thumb">thumbnail</div>
+			<div class="col-md-4 col-xs-12 thumb" style="background-color: yellow;">thumbnail</div>
+		</div>
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<!-- bs js -->
+	<script type="text/javascript" src="../bootstrap-3.3.7/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- 
+	@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 720px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 568px) {
+
+}
+
+@media only screen and (max-width: 563px) {
+
+}
+
+@media only screen and (max-width: 549px) {
+
+}
+
+@media only screen and (max-width: 534px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
+@media only screen and (max-width: 338px) {
+
+}
+
+@media only screen and (max-width: 330px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+
+
+@media only screen and (min-width:360px) and (max-width: 480px) {
+
+}
+
+
+<link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+<link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+ -->

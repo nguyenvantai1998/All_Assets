@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:sans-serif;
+  font-size:20px;
+}
+#menu{
+  background:red;
+}
+#menu ul{
+  text-decoration:none;
+  text-align:center;
+}
+#menu ul li{
+  display:inline-table;
+  width:200px;
+  line-height:40px;
+  position:relative;
+}
+#menu ul li a{
+  text-decoration:none;
+  color:white;
+}
+#menu ul li a:hover{
+  background:white;
+  color:#333;
+  display:block;
+}
+#menu ul li>.menu-lever-1{
+  display:none;
+  background:red;
+  position:absolute;
+}
+#menu ul li:hover>.menu-lever-1{
+  display:block;
+}
+#menu ul li>.menu-lever-1>li>.menu-lever-2{
+  position:absolute;
+  display:none;
+  background:green;
+  left:200px;
+  top:0px;
+}
+#menu ul li>.menu-lever-1>li:hover>.menu-lever-2{
+  display:block;
+}
+#menu ul li>.menu-lever-1>li>.menu-lever-2>li>.menu-lever-3{
+  position:absolute;
+  display:none;
+  background:orange;
+  left:200px;
+  top:0px;
+}
+#menu ul li>.menu-lever-1>li>.menu-lever-2>li:hover>.menu-lever-3{
+  display:block;
+}

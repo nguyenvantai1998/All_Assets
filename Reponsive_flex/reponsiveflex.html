@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Reponsive Flex</title>
+	<link rel="stylesheet" href="">
+
+	<style type="text/css" media="screen">
+		.container{
+			max-width: 80%;
+			max-height:auto;
+			background: gray;
+			margin:0 auto;
+			padding:1%;
+			display: flex;
+		}
+		.content{
+			flex: 2;
+			background: white;
+			order: 2;
+		}
+		.sidebar-one{
+			flex: 1;
+			background: green;
+			order: 1;
+		}
+		.sidebar-two{
+			flex: 1;
+			background:yellow;
+			order: 3;
+		}
+
+		.container-2{
+			margin:40px auto 0 auto;
+			max-width:80%;
+			/*display:flex;*/
+			
+			/* các thuộc tính đi kèm
+				--- Canh đều về top: align-items: flex-start;
+				--- Canh đều về bottom: align-items: flex-end;
+				--- Canh đều về giữa: align-items: center;
+				--- Canh đều khối nội dung: align-items: stretch;
+			*/
+			/* align-items: stretch; */
+			
+			/* Thuộc tính dùng canh chỉnh 1 khối flexbox, **Lưu ý phải có: box-sizing: border-box;
+				--- Canh trái: justify-content: flex-start;
+				--- Canh phải: justify-content: flex-end;
+				--- Canh giữa: justify-content: center;
+				--- Canh đều ra hai bên trái phải: justify-content: space-between;
+				--- Canh đều khoảng cách giữa các khoản trắng trải phải nằm cạnh khối flexbox,
+					và khi cả so với lề của khối bự chứa: justify-content: space-evenly;
+			 */
+			/*justify-content: space-between;*/
+		}
+		.content-1{
+			padding:20px;
+			margin-bottom:20px;
+			/* flex: 1; */
+			/* width:30%;  or */flex-basis: 30%;
+			box-sizing: border-box;
+		}
+		.content-1:nth-child(1){background: #27ae60;}
+		.content-1:nth-child(2){background: #9b59b6;}
+		.content-1:nth-child(3){background: #1abc9c;}
+
+		.container-3{
+			max-width:80%;
+			margin:0 auto;
+			margin-top:2%;
+			display:flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		.col{
+			width: 200px;/* lưu ý chỉ dùng px cho flex-wrap: wrap, nowrap */
+			margin-bottom:2%;
+			background: green;
+			box-sizing: border-box;
+			padding:2%;
+			font-size:2.5em;
+			font-weight: 700;
+			color:white;
+			text-align:center;
+		}
+
+		.container-4{
+			max-width:800px;
+			max-height:800px;
+			margin:0 auto;
+			background: black;
+			color:white;
+			font-weight:700;
+			font-size:3em;
+			padding:5%;
+			
+			/* display: flex; */
+			/* or */
+			text-align:center;
+		}
+		/* .box-name{
+			color:white;
+			font-weight:700;
+			font-size:3em;
+			margin: 0 auto;
+		} */
+
+		.container-5{
+			max-width: 80%;
+			max-height:auto;
+			margin:0 auto;
+			margin-top:2%;
+			background: red;
+			color:white;
+			display:flex;
+		}
+		.col-left{
+			background: blue;
+			flex: 2;
+		}
+		.col-right{
+			background: orange;
+			flex: 1;
+			display: flex;
+			/* flex-direction: row; */
+			flex-direction: column;
+		}
+		.col-r-row-top{background: green;flex: 1;}
+		.col-r-row-bottom{background: yellow;flex: 1;}
+
+
+		/*Reponsive*/
+		@media screen and (min-width:900px){
+			.container-2{
+				margin:40px auto 0 auto;
+				max-width:80%;
+				display:flex;
+				justify-content: space-between;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<h2>Content</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="sidebar-one">
+			<h2>SideBar One</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="sidebar-two">
+			<h2>SideBar Two</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+	<div class="container-2">
+		<div class="content-1">
+			<h2>Content 1</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="content-1">
+			<h2>Content 2</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="content-1">
+			<h2>Content 3</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+	<div class="container-3">
+		<div class="col">
+			1
+		</div>
+		<div class="col">
+			2
+		</div>
+		<div class="col">
+			3
+		</div>
+		<div class="col">
+			4
+		</div>
+		<div class="col">
+			5
+		</div>
+	</div>
+
+	<div class="container-4">
+		<div class="box-name">
+			Nguyễn Văn Tài
+		</div>
+	</div>
+
+	<div class="container-5">
+		<div class="col-left">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="col-right">
+			<div class="col-r-row-top">Top</div>
+			<div class="col-r-row-bottom">Bottom</div>
+		</div>
+	</div>
+
+	<p style="margin-bottom: 900px;"></p>
+</body>
+</html>

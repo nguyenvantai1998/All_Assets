@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*==body==*/
+body{
+	font-family:Times New Roman;	  
+	background: url('4.jpg') no-repeat center center fixed;/*ảnh nền*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#tieude{
+	font-size: 250%;
+	font-family: "Time New Roman";
+	color:red;
+	margin-left:350px;
+	text-shadow: white 3px/*độ mờ*/ -1px/*bóng lệch về phía nào*/ 3px/*nền mờ phía sao*/,
+				 white 3px -1px 3px;
+}
+#fieldset{
+	width:710px;
+	height:600px;
+	margin-left:200px;/*450*/
+	/*box-shadow: 5px 5px 10px 10px #81F781 inset;
+    -moz-box-shadow: 5px 5px 10px 10px #81F781 inset;
+    -webkit-box-shadow: 5px 5px 10px 10px #81F781 inset;
+    -o-box-shadow: 5px 5px 10px 10px #81F781 inset;
+    -ms-box-shadow: 5px 5px 10px 10px #81F781 inset;*/
+	box-shadow: 0px 0px 12px 10px #FE9A2E inset;
+    -moz-box-shadow: 10px 10px 12px 10px #FE9A2E inset;
+    -webkit-box-shadow: -10px -10px 12px 10px #FE9A2E inset;
+	
+}
+
+#table{
+	margin-top:50px;
+	margin-left:10px;
+}
+#a1{
+	width:200px;
+	font-size:19px;
+}
+#a1{
+	font-size: 19px;
+	font-family: "Time New Roman";
+	color:red;
+	text-shadow: red 3px/*độ mờ*/ -1px/*bóng lệch về phía nào*/ 3px/*nền mờ phía sao*/,
+				 red 3px -1px 3px;
+}
+#b1{
+	width:600px;
+}
+.cil{
+cursor:pointer;
+border:outset 3px #ccc;
+background:#FF4000;
+color:#FFFFFF;
+font-weight:bold;
+padding: 1px 2px;
+}

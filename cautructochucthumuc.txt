@@ -1,0 +1,18 @@
+- admin
+- view
+	*********
+		header.php
+		footer.php
+		------------------------
+			
+		----------------
+		sidebar.php
+
+		cách include_once('model/...')
+	*********
+- css
+- js
+- font
+- img
+- models
+- index.php

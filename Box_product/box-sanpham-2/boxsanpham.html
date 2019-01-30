@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-4">
+			<div class="product-item">
+				<div class="product-inner">
+
+					<div class="image">
+						<img src="../../PetShopCity/image/lovely/lovely-cho-2.jpg" alt="" height="500px">
+
+						<div class="image-overlay">
+							<div class="action-buttons">
+								<button>add to cart</button>
+								<button>add to wishlist</button>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="content">
+
+						<div class="content-left">
+
+							<h4 class="title"><a href="single-product.html">Tmart Baby Dress</a></h4>
+
+							<div class="ratting">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+							</div>
+
+							<h5 class="size">Size: <span>S</span><span>M</span><span>L</span><span>XL</span></h5>
+							<h5 class="color">Color: <span style="background-color: #ffb2b0"></span><span style="background-color: #0271bc"></span><span style="background-color: #efc87c"></span><span style="background-color: #00c183"></span></h5>
+
+						</div>
+
+						<div class="content-right">
+							<span class="price">$25</span>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<style type="text/css">
+		/*-- Product Item --*/
+.product-item .product-inner {
+  padding-bottom: 65px;
+  overflow: hidden;
+  position: relative;
+  /*-- Image --*/
+  /*-- Content --*/ }
+  .product-item .product-inner .image {
+    position: relative;
+    /*-- Image Overlay --*/ }
+    .product-item .product-inner .image img {
+      display: block;
+      width: 100%; }
+    .product-item .product-inner .image .image-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(148, 199, 235, 0.7);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      opacity: 0;
+      /*-- Action Buttons --*/ }
+      .product-item .product-inner .image .image-overlay .action-buttons {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .product-item .product-inner .image .image-overlay .action-buttons button {
+          clear: both;
+          width: 160px;
+          height: 45px;
+          margin: 9px auto;
+          border: 1px solid #ffffff;
+          background-color: transparent;
+          text-transform: uppercase;
+          font-family: "Dosis", sans-serif;
+          color: #ffffff;
+          padding: 10px 15px;
+          line-height: 23px;
+          font-size: 14px;
+          font-weight: 700; }
+          .product-item .product-inner .image .image-overlay .action-buttons button:first-child {
+            background-color: #ffffff;
+            color: #323132; }
+          .product-item .product-inner .image .image-overlay .action-buttons button:hover {
+            background-color: #ff708a;
+            border-color: #ff708a;
+            color: #ffffff; }
+  .product-item .product-inner .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -90px;
+    /*-- Content Left --*/
+    /*-- Content Left --*/ }
+    .product-item .product-inner .content .content-left {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% - 50px);
+      flex: 0 0 calc(100% - 50px);
+      /*-- Title --*/
+      /*-- Ratting --*/
+      /*-- Size --*/
+      /*-- Color --*/ }
+      .product-item .product-inner .content .content-left .title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600; }
+        .product-item .product-inner .content .content-left .title a {
+          color: #323132; }
+          .product-item .product-inner .content .content-left .title a:hover {
+            color: #ff708a; }
+      .product-item .product-inner .content .content-left .ratting {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px; }
+        .product-item .product-inner .content .content-left .ratting i {
+          font-size: 14px;
+          color: #94c7eb;
+          margin-right: 5px; }
+      .product-item .product-inner .content .content-left .size {
+        font-size: 14px;
+        color: #323132;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 18px;
+        margin-bottom: 13px;
+        font-weight: 600; }
+        .product-item .product-inner .content .content-left .size span {
+          margin-left: 7px; }
+      .product-item .product-inner .content .content-left .color {
+        font-size: 14px;
+        color: #323132;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 18px;
+        margin-bottom: 0;
+        font-weight: 600; }
+        .product-item .product-inner .content .content-left .color span {
+          width: 12px;
+          height: 12px;
+          border-radius: 50px;
+          display: block;
+          margin-left: 7px;
+          margin-top: 3px; }
+    .product-item .product-inner .content .content-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+      flex: 0 0 50px;
+      text-align: right; }
+      .product-item .product-inner .content .content-right .price {
+        display: block;
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #ff708a; }
+        .product-item .product-inner .content .content-right .price .old {
+          color: #94c7eb;
+          text-decoration: line-through;
+          display: block; }
+  .product-item .product-inner:hover {
+    /*-- Image --*/
+    /*-- Content --*/ }
+    .product-item .product-inner:hover .image .image-overlay {
+      opacity: 1; }
+    .product-item .product-inner:hover .content {
+      bottom: 0;
+      background-color: #f2faff;
+      padding: 25px 20px; }
+	</style>
+</body>
+</html>

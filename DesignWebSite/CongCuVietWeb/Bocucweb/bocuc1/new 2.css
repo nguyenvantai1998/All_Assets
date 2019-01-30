@@ -1,0 +1,29 @@
+* {margin: 0; padding: 0}
+body{font: 14px arial}
+/*#mainWap{ 
+    width: 950px; 
+    margin: 0 auto;
+}
+#header{
+    background: blue;
+	margin-bottom: 10px;
+}*/
+#left{
+    float: left; 
+    width:  200px; 
+    background: #f98000; 
+	min-height: 450px;
+}
+#right{
+    float: right; 
+    width: 700px;
+    background: #e4e4e4; 
+    min-height: 450px;
+}
+/*#footer{
+    background: green; 
+    margin-top: 10px;
+}
+.clr{clear: both;}
+#header, #footer, #left, #right{ padding: 10px }
+p{margin-bottom: 10px; line-height: 20px}*/

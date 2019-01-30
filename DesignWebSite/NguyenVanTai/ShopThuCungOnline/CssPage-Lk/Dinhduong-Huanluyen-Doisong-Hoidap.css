@@ -1,0 +1,140 @@
+/*******************Dinh Dưỡng - Huấn Luyện - Đời Sống - Hỏi Đáp*****************/
+/*Dùng Chung Css Main Style.css*/
+	/*Banner Head*/
+	/*FormatSize MiniMap*/
+	/*Footer Botoom*/
+/*Phần Riêng Dinhduong-Huanluyen-Doisong-Hoidap.css*/
+	/*
+		- Sử Dinhduong-Huanluyen-Doisong-Hoidap.css dụng cho:
+			+ Dinhduongthucung.html
+			+ Huanluyenthucung.html
+			+ Doisongthucung.html
+			+ Hoidap.html
+	*/
+
+#Dinhduong-Huanluyen-Doisong-Hoidap{
+	height:1400px;
+	display:flex;
+	width:100%;
+}
+	/*Col Left*/
+	#Dinhduong-Huanluyen-Doisong-Hoidap>div.Col-L{
+		flex:800px;
+		padding:5px;
+	}
+		/*Row 1*/
+		.Col-L>div.Row-1{
+			height:400px;
+		}
+		.Col-L>div.Row-1>h2{
+			padding:5px;
+			background:#ddd;
+			margin-bottom:5px;
+		}
+			/*Col 1*/
+			.Row-1>div.Col-1{
+				float:left;
+				width:350px;
+			}
+				.Col-1>img{
+					width:350px;
+					height:350px;
+				}
+			/*End*/
+			
+			/*Col 2*/
+			.Row-1>div.Col-2{
+				float:left;
+				width:440px;
+				margin-left:3px;
+			}
+				.Row-1>div.Col-2>div{
+					margin-top:10px;
+					font-size:18px;
+				}
+				.Row-1>div.Col-2>div>img{
+					width:200px;
+					height:100px;
+				}
+				.Row-1>div.Col-2>div>p{
+					float:right;
+					width:230px;
+					padding:5px;
+				}
+			/*End*/
+		/*End Row 1*/
+			
+		/*Row 2*/	
+		.Col-L>div.Row-2{
+			height:1000px;
+		}
+			.Row-2>div{
+				margin-top:10px;
+			}
+			.Row-2>div>img{
+				width:300px;
+				height:300px;
+			}
+			.Row-2>div>div{
+				float:right;
+				width:470px;
+				height:280px;
+				padding:10px;
+			}
+			.Row-2>div>div>h3{
+				text-align:center;
+			}
+			.Row-2>div>div>p{
+				text-indent:2em;
+				margin-top:5px;
+			}
+		/*End Row 2*/
+	/*End Col Left*/
+	
+	
+	/*Col Right*/
+	#Dinhduong-Huanluyen-Doisong-Hoidap>div.Col-R{
+		flex:400px;
+	}
+		/*Chính sách giao hàng*/
+		.Col-R>.Chinhsachgiaohang>img{
+			width:397px;
+			height:400px;
+			margin-top:5px;
+		}
+		/*End*/
+		
+		/*Quản cáo sản phẩm*/
+		.Col-R>.Quancaosanpham{
+			margin-top:5px;
+		}
+			.Quancaosanpham>div{
+				border:1px solid gray;
+				width:190px;
+				float:left;
+				margin:0px 0px 2px 2px;
+				padding-bottom:2px;
+			}
+			.Quancaosanpham>div>img{
+				width:190px;
+				height:200px;
+			}
+			.Quancaosanpham>div{
+				text-align:center;
+				color:green;
+				font-size:14px;
+			}
+			.Quancaosanpham>div>a{
+				padding:1px;
+				border-radius:5px;
+				color:white;
+				background-color:red;
+				text-decoration:none;
+			}
+			.Quancaosanpham>a>img{
+				width:70px;
+				height:50px;
+				margin:20px 0px 0px 150px;
+			}
+		/*End*/
+	/*End Col Right*/

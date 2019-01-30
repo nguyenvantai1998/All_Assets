@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Đăng Ký</title>
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<!--Tiêu đề--><br><br>
+	<div id="tieude">
+		<marquee align="center" direction="center" height="6%" scrollamount="4" width="420px" behavior="alternate">
+							<i>ĐĂNG KÝ TÀI KHOẢN</i>
+		</marquee>
+	</div>
+	<!--The end tiêu đề--><br>
+<fieldset id="fieldset">
+
+<!--From-->
+<form method="post" action="#" name="register" style="color:blue;">
+<!--Dùng bảng định dạng cho form-->
+<table border="0" cellspacing="10" id="table">
+	<tr>
+		<td id="a1" >
+			<label for="username"><b><i style="color:yellow;">Tên Đăng Nhập:</i><b></label>
+		</td>
+		<td id="b1">
+			<input class="text" type="password" name="username" id="username" size="25px" />
+		</td>
+	</tr>
+
+	<tr>
+		<td id="a1">
+			<label for="password"><b><i style="color:yellow;">Password:</i></b></label>
+		</td>
+		<td id="b1">
+			<input class="text" type="password" name="password" id="password" size="25px" />
+		</td>
+	</tr>
+
+	<tr>
+		<td id="a1">
+			<label for="confirm_pass" ><b><i style="color:yellow;">Nhập Lại Password:</i></b></label>
+		</td>
+		<td id="b1">
+			<input class="text" type="password" name="confirm_pass" id="confirm_pass" size="25px" />
+		</td>
+	</tr>
+
+	<tr>
+		<td id="a1">
+			<label for="lastname" ><b><i style="color:yellow;">Họ Của Bạn:</i></b></label>
+		</td>
+		<td id="b1">
+			<input class="text" type="text" name="lastname" id="lastname" size="25px" />
+		</td>
+	</tr>
+
+	<tr>
+		<td id="a1">
+			<label for="firstname" ><b><i style="color:yellow;">Tên Của Bạn:</i></b></label>
+		</td>
+		<td id="b1"> 
+			<input class="text" type="text" name="firstname" id="firstname" size="25px" />
+		</td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><b><i style="color:yellow;" id="a1">Nhập Ngày </b></i> &nbsp;&nbsp; &nbsp;
+			<input class="text" type="text" name="nhapngay" id="nhapngay" size="1px" />
+		</td>
+	</tr>
+	<tr>
+		<td id="a1" >
+			<b><i style="color:yellow;">Năm Sinh:</i></b>
+		</td>
+		<td >
+			<b><i style="color:yellow;" id="a1">Nhập Tháng</b></i> &nbsp;&nbsp; 
+				<input class="text" type="text" name="nhapthang" id="nhapthang" size="1px" />
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td >
+			<b><i style="color:yellow;" id="a1">Nhập Năm  </b></i> &nbsp; &nbsp; &nbsp;
+				<input class="text" type="text" name="nhapnam" id="nhapnam" size="1px" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td id="a1">
+			<label for="email"><b><i style="color:yellow;">Email:</i></b></label>
+		</td>
+		<td id="b1" >
+			<input class="text" type="text" name="email" id="email" size="25px" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td id="a1">
+			<label for="CMND"><i><b style="color:yellow;">CMND:</b></i></label>
+		</td>
+		<td id="b1">
+			<input class="text" type="text" name="CMND" id="CMND" size="25px" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td id="a1">
+			<label for="phone"><b><i style="color:yellow;">Số Điện Thoại:</i></b></label>
+		</td>
+		<td id="b1">
+			<input class="text" type="text" name="phone" id="phone" size="25px" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td id="a1">
+			<label for="sever"><b><i style="color:yellow;">Chọn Sever:</i></b></label>
+		</td>
+		<td>
+			<select>
+				<option value="sv1">Sever 1</option>
+				<option value="sv2">Sever 2</option>
+				<option value="sv3">Sever 3</option>
+				<option value="sv4">Sever 4</option>
+				<option value="sv5">Sever 5</option>
+				<option value="sv6">Sever 6</option>
+				<option value="sv7">Sever 7</option>
+				<option value="sv8">Sever 8</option>
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2"><br> <br> &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 
+		&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+			<input type="checkbox" value="check" id="checked" /><b><i style="color:yellow;" id="a1">
+			Tôi Đồng ý với các đều khoảng trên</i></b>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+		</td>
+		<td align="left"><br> <br>&nbsp; &nbsp; &nbsp; &nbsp;
+			<input type="submit" class="cil" name="action" id="submit" value="Đăng ký">
+				
+		&nbsp; &nbsp; &nbsp;
+			<input type="submit" class="cil" name="action" id="reset" value="Làm lại" >
+				
+		</td>
+	</tr>
+</table>
+<!--The end Dùng bảng định dạng cho form-->
+</form>
+<!--The end form-->
+<marquee direction="center" style="color:blue;"><b><i>Nhóm: Nguyễn Văn Tài, Từ Anh Nhân, Huỳnh Tấn Tài,Cao Phú Cường</i></b></marquee>
+</fieldset>
+<script src="Javascript.js">/*Liên kết Javacript*/</script>
+</body>
+</html>

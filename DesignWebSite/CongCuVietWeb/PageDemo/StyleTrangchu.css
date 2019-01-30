@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding:0;
+}
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+	background-image:url('4.jpg');
+	min-height: 100%;
+	background-position: center;
+    background-size: cover;
+}
+#logo{
+	font-size:150%;
+	margin-left:5%;
+	width:200%;
+	padding:2%;
+	color:Red;
+}
+#logo1{
+	font-size:30%;
+	width:200%;
+	margin-left:40%;
+}
+#Search{
+	width:100%;
+	margin-top:10%;
+}

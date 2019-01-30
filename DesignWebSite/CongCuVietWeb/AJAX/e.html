@@ -1,0 +1,19 @@
+<html>
+        <head>
+          <meta charset="utf-8">
+          <title>jQuery test page</title>
+          <script type="text/javascript" src="jquery.js"></script>
+          <script type="text/javascript">
+            $(document).ready(function(e) {
+              $("#change").click(function() {
+                $("#test").html("b.html");
+              });
+            });
+          </script>
+        </head>
+        <body>
+          <a id="change">Change div content</a>
+          <br />
+          <div id="test">Old content</div>
+        </body>
+      </html>

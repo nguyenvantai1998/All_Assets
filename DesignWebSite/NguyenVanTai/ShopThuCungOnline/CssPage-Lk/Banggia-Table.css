@@ -1,0 +1,167 @@
+/*******************Bảng Giá*****************/
+/*Dùng Chung Css Main Style.css*/
+	/*Banner Head*/
+	/*FormatSize MiniMap*/
+	/*Footer Botoom*/
+/*Phần Riêng Banggia-Table.css*/
+#Banggia{
+	height:1900px;
+	display:flex;
+	width:100%;
+}
+	/*Col Left*/
+	.Col-L{
+		flex:800px;
+		padding:5px;
+	}
+		.Col-L>h1{
+			color:#882d89;
+			text-align:center;
+		}
+		.Col-L>h3{
+			color:red;
+			margin:10px 0px 0px 50px;
+		}
+		.Col-L>ol{
+			margin:10px 0px 0px 100px;
+			line-height:25px;
+		}
+		/*Table 1*/
+		.Col-L>div.Table-1>h1{
+			text-align:center;
+			margin-top:30px;
+			color:#882d89;
+			margin-bottom:25px;
+		}
+		.Col-L>div.Table-1>h2{
+			text-align:center;
+			color:green;
+			width:450px;
+			margin:0 auto;
+		}
+			.Table-1>div.Box-Table{
+				background:#d6de22;
+				padding:10px 20px;
+				width:700px;
+				margin:0 auto;
+				margin-top:10px;
+				border-radius:25px;
+			}
+			.Table-1>div.Box-Table>table{
+				width:700px;
+				border-collapse:collapse;/*gọp border*/
+				text-align:center;
+			}
+			.tr1>td{
+				background:#4a515a;
+				color:white;
+				width:100px;
+				border:3px solid gray;
+				padding:10px;
+				font-style:italic;
+			}
+			.Box-Table>h3{
+				font-style:italic;
+				color:white;
+				padding:10px;
+			}
+		/*End Table 1*/
+		
+		/*Table 2*/
+		.Table-2>div.Box-Table{
+			background:#d6de22;
+			padding:10px 20px;
+			width:700px;
+			margin:0 auto;
+			margin-top:40px;
+			border-radius:25px;
+		}
+		.Table-2>div.Box-Table>table{
+			width:700px;
+			border-collapse:collapse;/*gọp border*/
+			text-align:center;
+		}
+		.tr2>td{
+				background:#4a515a;
+				color:white;
+				width:100px;
+				border:3px solid gray;
+				padding:10px;
+				font-style:italic;
+			}
+		/*End Table 2*/
+		
+		/*Nội Quy*/
+		.Noiquy>h1{
+			color:#882d89;
+			text-align:center;
+			margin-top:20px;
+		}
+			.Noiquy>ul{
+				list-style-type:none;
+			}
+			.Noiquy>ul>li{
+				float:left;
+				width:165px;
+				margin-left:5px;
+				border:2px dotted #882d89;
+				height:350px;
+				border-radius:10px;
+				padding:10px;
+				background:#4a515a;
+				color:white;
+				text-indent:1em;
+				text-align:justify;
+				font-style:italic;
+			}
+		/*End Nội Quy*/
+	/*End Col Left*/
+	
+	
+	/*Col Right*/
+	#Banggia>div.Col-R{
+		flex:400px;
+	}
+		/*Chính sách giao hàng*/
+		.Col-R>.Chinhsachgiaohang>img{
+			width:397px;
+			height:400px;
+			margin-top:5px;
+		}
+		/*End*/
+		
+		/*Quản cáo sản phẩm*/
+		.Col-R>.Quancaosanpham{
+			margin-top:5px;
+		}
+			.Quancaosanpham>div{
+				border:1px solid gray;
+				width:190px;
+				float:left;
+				margin:0px 0px 2px 2px;
+				padding-bottom:2px;
+			}
+			.Quancaosanpham>div>img{
+				width:190px;
+				height:200px;
+			}
+			.Quancaosanpham>div{
+				text-align:center;
+				color:green;
+				font-size:14px;
+			}
+			.Quancaosanpham>div>a{
+				padding:1px;
+				border-radius:5px;
+				color:white;
+				background-color:red;
+				text-decoration:none;
+			}
+			.Quancaosanpham>a>img{
+				width:70px;
+				height:50px;
+				margin:20px 0px 0px 150px;
+			}
+		/*End*/
+		
+	/*End Col Right*/

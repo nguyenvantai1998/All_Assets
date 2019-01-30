@@ -1,0 +1,36 @@
+.container
+{
+	margin-top: 10%;
+}
+.box-img
+{
+	overflow: hidden;
+}
+.box-img img
+{
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+}
+.box-img img:hover
+{
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	     -o-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+.box-content
+{
+	position: absolute;
+	bottom:0;
+	color: white;
+	box-sizing: border-box;
+	height:0;
+}
+.box:hover .box-content,img
+{
+	height: 50%;
+}
